@@ -4,7 +4,7 @@ import reducerCounter from '../reducers';
 /**
  * Store state shape.
  * {
- *    currentNumber: 0,
+ *    current: 0,
  * }
  */
 const preloadedState = window.__PRELOADED_STATE__;

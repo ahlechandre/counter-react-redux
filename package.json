@@ -28,6 +28,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-server": "babel src -d dist",
+    "build-client": "react-scripts build && rm ./build/index.html",
     "serve": "node dist/server.js"
   }
 }

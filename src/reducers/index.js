@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { TYPE_DECREMENT, TYPE_INCREMENT } from '../actions';
 
-const currentNumber = (state = 0, action) => {
+const current = (state = 0, action) => {
   switch (action.type) {
     case TYPE_INCREMENT:
       return (state + 1);
@@ -13,7 +13,7 @@ const currentNumber = (state = 0, action) => {
 };
 
 const reducerCounter = combineReducers({
-  currentNumber,
+  current,
 });
 
 export default reducerCounter;

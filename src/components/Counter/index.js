@@ -6,10 +6,10 @@ import PropTypes from 'prop-types';
 import ButtonDecrement from '../ButtonDecrement';
 import ButtonIncrement from '../ButtonIncrement';
 
-const Counter = ({ onIncrement, onDecrement, currentNumber }) => (
+const Counter = ({ onIncrement, onDecrement, current }) => (
   <div>
     <h1>
-      {currentNumber}
+      {current}
     </h1>
     <div>
       <ButtonIncrement onClick={onIncrement} />
@@ -19,7 +19,7 @@ const Counter = ({ onIncrement, onDecrement, currentNumber }) => (
 );
 
 Counter.propTypes = {
-  currentNumber: PropTypes.number.isRequired,
+  current: PropTypes.number.isRequired,
   onIncrement: PropTypes.func.isRequired,
   onDecrement: PropTypes.func.isRequired,
 };
